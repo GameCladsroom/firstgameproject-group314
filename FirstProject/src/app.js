@@ -24,6 +24,8 @@ var HelloWorldLayer = cc.Layer.extend({
         });
         this.addChild(this.sprite, 0);
 
+        this.sprite.runAction(cc.fadeOut(5));
+
         return true;
     }
 });
