@@ -15,6 +15,14 @@ var HelloWorldLayer = cc.Layer.extend({
             y: size.height - rasengan.height * rasengan.scaleY
         });
         this.addChild(rasengan, 0);
+        
+        // add "HelloWorld" splash screen"
+        this.sprite = new cc.Sprite(res.chidory_nik);
+        this.sprite.attr({
+            x: size.width / 2,
+            y: size.height / 2
+        });
+        this.addChild(this.sprite, 0);
 
         return true;
     }
